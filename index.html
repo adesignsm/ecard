@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title> E-card Generator </title>
+
+        <link rel = "stylesheet" type = "text/css" href = "assets/main.css" />
+    </head>
+
+    <body>
+        <div id = "wrapper">
+            <h1> Design your Card </h1>
+
+            <div id = "ecard-form">
+                <h3> Write your message here </h3>
+                <textarea id = "message-box" name = "message-box" rows = "5"></textarea>
+                
+                <h3> Who is this card for </h3>
+                <input id = "to-input" type = "text" placeholder = "To:">
+
+                <h3> Who is it from </h3>
+                <input id = "from-input" type = "text" placeholder = "From:">
+
+                <h3> Select an Image to use </h3>
+
+                <div id = "image-grid">
+                    <img src = "https://image.flaticon.com/icons/svg/2603/2603009.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/1792/1792920.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/1737/1737854.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/2621/2621293.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/2606/2606510.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/1165/1165800.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/136/136530.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/688/688063.svg" />
+                    <img src = "https://image.flaticon.com/icons/svg/524/524544.svg" />
+                </div>
+
+                <button id = "show-images"> Show images </button>
+
+                <h3> Lastly, choose a background colour! </h3>
+                <input type = "color" placeholder = "Choose color">
+
+                <button id = "create-button"> Create </button>
+            </div>
+
+            <div id = "generated-card-container">
+
+            </div>
+        </div>
+
+        <script type = "text/javascript" src = "scripts/main.js"></script>
+    </body>
+</html>

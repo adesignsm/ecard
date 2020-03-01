@@ -3,6 +3,7 @@ body, html {
     margin: 0;
     min-height: 100%;
     min-width: 100%;
+    font-family: 'Simonetta';
 }
 
 @media only screen and (min-width: 100px) and (max-width: 1000px) {
@@ -16,11 +17,12 @@ body, html {
     }
 
     h3 {
-        padding: 2%;
+        padding: 0%;
         font-size: 300%;
     }
 
     textarea, input[type=text], button {
+        font-family: 'Simonetta';
         border-radius: 20px;
     }
 
@@ -49,6 +51,7 @@ body, html {
 
     #image-grid {
         display: none;
+        width: 100%;
     }
 
     #image-grid img {
@@ -66,16 +69,17 @@ body, html {
         background-color: #000;
         color: #fff;
         border: none;
-        margin-bottom: 5%;
+        margin-bottom: 0%;
     }
 
     input[type=color] {
         -webkit-appearance: none;
         border: none;
-        width: 50%;
+        width: 150px;
         height: 150px;
         color: #000;
         margin-bottom: 5%;
+        background-color: transparent;
     }
 
     input[type="color"]::-webkit-color-swatch-wrapper {
@@ -89,5 +93,23 @@ body, html {
 
     input[type=color]:focus {
         outline: none;
+    }
+
+    #ecard-page-1 {
+        padding: 0;
+        margin: 0;
+    }
+
+    #generated-card-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+
+    #generated-card-container img {
+        width: 50%;
     }
 }
